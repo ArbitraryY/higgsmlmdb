@@ -20,6 +20,7 @@ This script takes the HiggsML test, training, and random_submission datasets (CS
     * to start mongodb (using the default configuration and install guidelines from the MongoDB install guide above) run 
         * <path to mongo>/bin/mongo --conf=<path to mongod.conf>
 * Deployment instructions
+    * Start up mongo as shown above
     * Copy the script hml_to_mdb.py to a directory on your hard drive.  Place the dataset files, test.csv, training.csv, and random_submission.csv into this same directory.  
     * Run python hml_to_mdb.py <test | training | random_submission>.  This creates a test, training, or random_submission database called higgsml_test (training, random_submission).  Each row in the .csv file is put into an "events" collection and each row in the .csv file becomes a document in the events collection with "EventId" in place of the default "_id".
 
