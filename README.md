@@ -1,10 +1,10 @@
 # README #
 
+The Higgs Machine Learning Challenge is put on by CERN to help try to improve the discovery methods of the Higgs Boson. 
 
+From the challenge website: http://higgsml.lal.in2p3.fr/...
 
-### What is this repository for? ###
-
-* Convert the test, training, and random_submission CSV files from the HiggsML challenge to MongoDB instances.  
+This script takes the HiggsML test, training, and random_submission datasets (CSV files) from the HiggsML challenge to MongoDB instances
 * Version - 0.1
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
@@ -13,14 +13,19 @@
 * Summary of set up
 * Configuration
 * Dependencies
+    * MongoDB - http://docs.mongodb.org/manual/installation/
+    * pymongo - http://api.mongodb.org/python/current/installation.html
+    * HiggsML Data sets - https://www.kaggle.com/c/higgs-boson/data
 * Database configuration
+    * to start mongodb (using the default configuration and install guidelines from the MongoDB install guide above) run 
+        * <path to mongo>/bin/mongo --conf=<path to mongod.conf>
 * Deployment instructions
+    * Copy the script hml_to_mdb.py to a directory on your hard drive.  Place the dataset files, test.csv, training.csv, and random_submission.csv into this same directory.  
+    * Run python hml_to_mdb.py <test | training | random_submission>.  This creates a test, training, or random_submission database called higgsml_test (training, random_submission).  Each row in the .csv file is put into an "events" collection and each row in the .csv file becomes a document in the events collection with "EventId" in place of the default "_id".
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Do what you wish...
 
 ### Who do I talk to? ###
 
