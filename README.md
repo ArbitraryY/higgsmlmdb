@@ -1,6 +1,6 @@
 # README #
 
-The Higgs Machine Learning Challenge is put on by CERN to help try to improve the discovery methods of the Higgs Boson. 
+The Higgs Machine Learning Challenge is put on by CERN to help improve the discovery methods of the Higgs Boson. 
 
 From the challenge website: http://higgsml.lal.in2p3.fr/...
 
