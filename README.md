@@ -4,7 +4,7 @@ The Higgs Machine Learning Challenge is put on by CERN to help improve the disco
 
 From the challenge website: http://higgsml.lal.in2p3.fr/...
 
-This script takes the HiggsML test, training, and random_submission datasets (CSV files) from the HiggsML challenge to MongoDB instances
+This script takes the HiggsML test, training, and random_submission datasets (CSV files) from the HiggsML challenge and imports them into MongoDB instances
 * Version - 0.1
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
